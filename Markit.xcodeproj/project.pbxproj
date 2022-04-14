@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		847FF5A027FCF007000B769F /* AddNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847FF59F27FCF007000B769F /* AddNewView.swift */; };
+		847FF5A227FCF254000B769F /* TodoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847FF5A127FCF254000B769F /* TodoViewCell.swift */; };
 		84AE623527FA5A7A00453C4F /* MarkitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE623427FA5A7A00453C4F /* MarkitApp.swift */; };
 		84AE623727FA5A7A00453C4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE623627FA5A7A00453C4F /* ContentView.swift */; };
 		84AE623927FA5A7B00453C4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84AE623827FA5A7B00453C4F /* Assets.xcassets */; };
 		84AE623C27FA5A7B00453C4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84AE623B27FA5A7B00453C4F /* Preview Assets.xcassets */; };
 		84AE623E27FA5A7B00453C4F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE623D27FA5A7B00453C4F /* Persistence.swift */; };
 		84AE624127FA5A7B00453C4F /* Markit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84AE623F27FA5A7B00453C4F /* Markit.xcdatamodeld */; };
+		84AE624827FA5AEF00453C4F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE624727FA5AEF00453C4F /* HomeView.swift */; };
+		84AE624A27FA5BA000453C4F /* HomeViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE624927FA5BA000453C4F /* HomeViewModal.swift */; };
+		84AE624C27FA5C3500453C4F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE624B27FA5C3500453C4F /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		847FF59F27FCF007000B769F /* AddNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewView.swift; sourceTree = "<group>"; };
+		847FF5A127FCF254000B769F /* TodoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewCell.swift; sourceTree = "<group>"; };
 		84AE623127FA5A7A00453C4F /* Markit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Markit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AE623427FA5A7A00453C4F /* MarkitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkitApp.swift; sourceTree = "<group>"; };
 		84AE623627FA5A7A00453C4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +30,9 @@
 		84AE623B27FA5A7B00453C4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84AE623D27FA5A7B00453C4F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		84AE624027FA5A7B00453C4F /* Markit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Markit.xcdatamodel; sourceTree = "<group>"; };
+		84AE624727FA5AEF00453C4F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		84AE624927FA5BA000453C4F /* HomeViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModal.swift; sourceTree = "<group>"; };
+		84AE624B27FA5C3500453C4F /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +46,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		847FF5A327FE56EF000B769F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				847FF5A127FCF254000B769F /* TodoViewCell.swift */,
+				84AE624727FA5AEF00453C4F /* HomeView.swift */,
+				84AE623627FA5A7A00453C4F /* ContentView.swift */,
+				847FF59F27FCF007000B769F /* AddNewView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		847FF5A427FE5704000B769F /* ViewModals */ = {
+			isa = PBXGroup;
+			children = (
+				84AE624927FA5BA000453C4F /* HomeViewModal.swift */,
+			);
+			path = ViewModals;
+			sourceTree = "<group>";
+		};
+		847FF5A527FE570F000B769F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				84AE623D27FA5A7B00453C4F /* Persistence.swift */,
+				84AE624B27FA5C3500453C4F /* CoreDataManager.swift */,
+				84AE623F27FA5A7B00453C4F /* Markit.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		84AE622827FA5A7900453C4F = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +94,11 @@
 		84AE623327FA5A7A00453C4F /* Markit */ = {
 			isa = PBXGroup;
 			children = (
+				847FF5A527FE570F000B769F /* CoreData */,
+				847FF5A427FE5704000B769F /* ViewModals */,
+				847FF5A327FE56EF000B769F /* Views */,
 				84AE623427FA5A7A00453C4F /* MarkitApp.swift */,
-				84AE623627FA5A7A00453C4F /* ContentView.swift */,
 				84AE623827FA5A7B00453C4F /* Assets.xcassets */,
-				84AE623D27FA5A7B00453C4F /* Persistence.swift */,
-				84AE623F27FA5A7B00453C4F /* Markit.xcdatamodeld */,
 				84AE623A27FA5A7B00453C4F /* Preview Content */,
 			);
 			path = Markit;
@@ -144,9 +183,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				84AE623E27FA5A7B00453C4F /* Persistence.swift in Sources */,
+				847FF5A227FCF254000B769F /* TodoViewCell.swift in Sources */,
+				847FF5A027FCF007000B769F /* AddNewView.swift in Sources */,
 				84AE623727FA5A7A00453C4F /* ContentView.swift in Sources */,
 				84AE623527FA5A7A00453C4F /* MarkitApp.swift in Sources */,
+				84AE624827FA5AEF00453C4F /* HomeView.swift in Sources */,
 				84AE624127FA5A7B00453C4F /* Markit.xcdatamodeld in Sources */,
+				84AE624C27FA5C3500453C4F /* CoreDataManager.swift in Sources */,
+				84AE624A27FA5BA000453C4F /* HomeViewModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
